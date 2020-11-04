@@ -10,9 +10,15 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var YellowView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        var greenSquare = UIView(frame: CGRect(x: 0, y: 0, width: 50, height: 50))
+        greenSquare.backgroundColor = .green
+        YellowView.addSubview(greenSquare)
+        
     }
 
 
